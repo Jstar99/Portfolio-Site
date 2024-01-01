@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}Jabulani Williams{% endblock %}
+
+{% block content %}
+
+<!-- <img class="photo" src="https://cdn.discordapp.com/attachments/715714979365650515/1116418221126455316/20230119_164858.jpg?ex=6596ea7d&is=6584757d&hm=ddbc350989b459b14cfb69390bc6d87a193baf5d4845c09cb6ae6ff88b481ff7&" alt=""> -->
+
+<content>
+    <section id="section1">
+        <img class="photo" src="https://cdn.discordapp.com/attachments/715714979365650515/1116418221126455316/20230119_164858.jpg?ex=6596ea7d&is=6584757d&hm=ddbc350989b459b14cfb69390bc6d87a193baf5d4845c09cb6ae6ff88b481ff7&" alt="">
+        <b class="logo">Jabulani</b>
+        <div class="overview">
+            <h1 class="oTitle"><b>FULLSTACK DEVELOPER.</b></h1>
+            <p class="oText">Whereas disregard and contempt for human rights have resulted
+                Whereas disregard and contempt for human rights have resulted
+                Whereas disregard and contempt for human rights have resulted
+                Whereas disregard and contempt for human rights have resulted
+            </p>
+        </div> 
+    </section>
+    <section id="section2"><b>About me</b></section>
+    <section id="section3"><b>About my work</b></section>
+    <section id="section4"><b>Links</b></section>
+    <section id="section5"><b>Contact</b></section>
+</content>
+
+<style>
+    section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        font-size: 2em;       
+        /* justify-content: center;
+        align-items: center;  */
+    }
+
+    p { font-size: .7em;}
+
+    .logo{
+        margin-top: 4%;
+        margin-left: 7%;
+    }
+    
+    .overview{
+        /* background-color: red; */
+        margin-top: 15%;
+        margin-right: 20%;
+    }
+
+    .oTitle{
+        font-size: 1.6em;
+        font-weight: 400;
+        text-shadow: 3px 3px 3px #ababab;
+        width: 150px;
+        /* font-family: "Sofia", sans-serif; */
+    }
+
+    .photo{
+        width: 250px;
+        height: 250px; 
+        z-index: 2;
+        position: absolute;
+        margin-left: 55%;
+        margin-top: 13%;
+    }
+
+    /* .oText{ width: 0%;} */
+
+
+
+
+    #section1 { background-color: #6e0d25; color:  #a4e9d5; width: 65%; z-index: 1;}
+    #section2 { background-color:  mintcream; color: #6e0d25;}
+    #section3 { background-color: #6e0d25; color:  #a4e9d5; }
+    #section4 { background-color:  mintcream; color: #6e0d25;}
+    #section5 { background-color: #6e0d25; color:  #a4e9d5; }
+
+</style>
+
+<script>
+            // Add event listener for mouse wheel scrolling
+            document.addEventListener('wheel', function(event) {
+            event.preventDefault(); // Prevent default scrolling behavior
+
+            // Calculate the target section based on the current scroll position
+            const currentSection = Math.round(window.scrollY / window.innerHeight);
+            const targetSection = (event.deltaY > 0) ? currentSection + 1 : currentSection - 1;
+
+            // Scroll to the top of the target section
+            const targetY = targetSection * window.innerHeight;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+        });
+
+</script>
+{% endblock %}

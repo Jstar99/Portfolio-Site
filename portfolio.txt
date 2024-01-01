@@ -1,0 +1,30 @@
+Projects:
+
+C#:
+	-Project Ennead (Game)
+	-Inventory managemnt system
+	-Library management system*
+	-Employee performace tracker*
+	-Chat application with socket programming*
+	
+
+
+Python:
+	-Discord Bot
+	-DevLnk (Webdev)
+	-Weather app with data visualization*
+	-Expense tracker with data analysis 
+	-Language learning app*
+	-Recommendation System for Movies or Books
+	-Web Scraper for News Articles*
+
+Remember to focus on code quality, documentation, and user interface design when working on these projects. Additionally, consider adding a README file to your project repositories on platforms like GitHub to provide instructions on how to run and use your applications.
+____________________________________________________________________________________________
+Design:
+
+Name 
+
+Github 
+Email 
+Resume
+Projects
